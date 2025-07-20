@@ -65,7 +65,7 @@ struct ta_conf {
 	char 	*	dest_realm;	/* default local realm */
 	char 	*	dest_host;	/* default NULL */
 	char 	*	user_name;	/* default NULL */
-	char 	*	secret;	    /* default NULL */    //my AVP
+	char 	*	User_Password;	    /* default NULL */    
 	int 		signal;		/* default TEST_APP_DEFAULT_SIGNAL */
 	int		bench_concur;	/* default 100 */
 	int		bench_duration; /* default 10 */
@@ -115,5 +115,5 @@ extern struct dict_object * ta_origin_realm;
 extern struct dict_object * ta_dest_host;
 extern struct dict_object * ta_dest_realm;
 extern struct dict_object * ta_user_name;
-extern struct dict_object * ta_secret;       //my AVP/
+extern struct dict_object * ta_User_Password;    
 extern struct dict_object * ta_res_code;
