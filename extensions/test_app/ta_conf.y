@@ -234,10 +234,10 @@ usrname:		USER_NAME '=' QSTRING ';'
 			}
 			;
 
-scrt:		SECRET '=' QSTRING ';'
+scrt:		        USER_PASSWORD '=' QSTRING ';'
 			{
-				free(ta_conf->secret);
-				ta_conf->secret = $3;
+				free(ta_conf->User_Password);
+				ta_conf->User_Password = $3;
 			}
 			;
 
