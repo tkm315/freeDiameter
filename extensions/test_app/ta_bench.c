@@ -222,11 +222,11 @@ static void ta_bench_test_message()
 		CHECK_FCT_DO( fd_msg_avp_add( req, MSG_BRW_LAST_CHILD, avp ), goto out  );
 	}
 	
-	/* Set the secret AVP if needed*/
-	if (ta_conf->secret) {
-		CHECK_FCT_DO( fd_msg_avp_new ( ta_secret, 0, &avp ), goto out  );
-		val.os.data = (unsigned char *)(ta_conf->secret);
-		val.os.len  = strlen(ta_conf->secret);
+	/* Set the User_Password AVP if needed*/
+	if (ta_conf->User_Password) {
+		CHECK_FCT_DO( fd_msg_avp_new ( ta_User_Password, 0, &avp ), goto out  );
+		val.os.data = (unsigned char *)(ta_conf->User_Password);
+		val.os.len  = strlen(ta_conf->User_Password);
 		CHECK_FCT_DO( fd_msg_avp_setvalue( avp, &val ), goto out  );
 		CHECK_FCT_DO( fd_msg_avp_add( req, MSG_BRW_LAST_CHILD, avp ), goto out  );
 	}
