@@ -156,8 +156,8 @@
 				return USER_NAME;
 			}
 
-(?i:"secret")       {
-				return SECRET;
+(?i:"User-Password")       {
+				return USER_PASSWORD;
 			}				
 
 (?i:"Signal")		{
