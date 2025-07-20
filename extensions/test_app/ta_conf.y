@@ -126,7 +126,7 @@ void yyerror (YYLTYPE *ploc, char * conffile, char const *s)
 %token 		DEST_REALM
 %token 		DEST_HOST
 %token 		USER_NAME
-%token 		SECRET
+%token 		USER_PASSWORD
 %token 		SIGNAL
 %token		BENCH
 
